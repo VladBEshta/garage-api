@@ -7,13 +7,15 @@
   "scripts": {
     "build": "node build/build.js",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "postinstall": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js"
   },
   "dependencies": {
     "firebase": "^7.23.0",
     "js-datepicker": "^5.16.0",
     "moment": "^2.29.1",
     "node-sass": "^4.14.1",
+    "postinstall": "^0.7.0",
     "sass-loader": "^10.0.2",
     "v-calendar": "^1.0.8",
     "vue": "^2.5.2",
